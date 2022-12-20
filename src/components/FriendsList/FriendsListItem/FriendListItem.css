@@ -1,0 +1,38 @@
+.statusTrue {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin-right: 10px;
+  background-color: green;
+}
+
+.statusFalse {
+  composes: statusTrue;
+  background-color: red;
+}
+
+.item {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.avatar {
+  background-image: linear-gradient(
+    rgba(0, 0, 255, 0.5),
+    rgba(255, 255, 0, 0.5)
+  );
+}
+
+.name {
+  margin-left: 10px;
+}

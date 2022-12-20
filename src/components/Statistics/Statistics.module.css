@@ -1,0 +1,29 @@
+.statistics {
+  margin-top: 50px;
+  width: 350px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.statList {
+  padding: 0;
+  display: flex;
+}
+
+.item {
+  padding: 10px 15px 15px 15px;
+  width: 50px;
+}
+
+.label {
+  display: flex;
+}

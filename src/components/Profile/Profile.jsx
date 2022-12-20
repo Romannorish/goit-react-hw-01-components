@@ -1,5 +1,5 @@
-
-import css from 'components/Profile/Profile/'
+import PropTypes from 'prop-types';
+import css from 'components/Profile/Profile.module.css'
 
 export default function Profile({ avatar, username, tag, location, stats: { followers, views, likes }, }) {
    return <div className={css.profile}>
@@ -29,14 +29,14 @@ export default function Profile({ avatar, username, tag, location, stats: { foll
 }
 
 
-// Profile.propTypes = {
-//   avatar: PropTypes.string.isRequired,
-//   username: PropTypes.string.isRequired,
-//   tag: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   stats: PropTypes.shape({
-//     followers: PropTypes.number.isRequired,
-//     views: PropTypes.number.isRequired,
-//     likes: PropTypes.number.isRequired,
-//   }).isRequired,
-// };
+Profile.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+};
