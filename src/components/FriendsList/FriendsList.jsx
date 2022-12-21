@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 
 import css from 'components/FriendsList/FriendsList'
+
+
 import FriendListItem from 'components/FriendsList/FriendsListItem'
 
 export default function FriendList({ friends }) {

@@ -1,10 +1,11 @@
 import Profile from "components/Profile/Profile";
 import Statistics from 'components/Statistics/Statistics'
 import TransactionHistory from 'components/Transactions/TransactionHistory'
-// import FriendList from './FriendsList/FriendsList';
+import FriendList from 'components/FriendsList/FriendsList';
+
 import user from 'data/user'
 import data from 'data/data'
-// import friends from 'data/friends'
+import friends from 'data/friends'
 import transactions from 'data/transactions'
 
 
@@ -17,10 +18,11 @@ export function App() {
             location={user.location}
             stats={user.stats}
     />
-    {/* <FriendList friends={friends} /> */}
+    <FriendList friends={friends} />
+    <TransactionHistory items={transactions} />
     <Statistics  title="Upload stats" stats={data} />
     <Statistics stats={data} />
-    <TransactionHistory items={transactions} />
+    
   </div>
 }
 

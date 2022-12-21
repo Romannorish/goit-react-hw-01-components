@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from 'components/Statistics/Statistics.module.css'
 
 export default function Statistics({ title, stats}) {
-    return <section className={css.Statistics}>
+  return <section className={css.Statistics}>
     {title && <h2 className={css.title}>{title}</h2>}
   
     <ul className={css.statList}>
@@ -19,7 +19,7 @@ export default function Statistics({ title, stats}) {
         ))}
     </ul>
   </section>
-   
+  
 }
 
 
