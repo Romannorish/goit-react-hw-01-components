@@ -1,4 +1,4 @@
-import css from 'components/FriendsList/FriendsListItem/FriendsListItem.module.css'
+import css from 'components/FriendsList/FriendsListItem/FriendListItem.module.css'
 
 
 
